@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tekort — Privacy Policy</title>
+<title>Tekort Privacy Policy</title>
 <style>
   :root { --ink: #16160f; --quiet: #5c5c52; --line: #e2e0d6; --paper: #faf9f5; --mark: #00A85C; }
   @media (prefers-color-scheme: dark) {
@@ -28,7 +28,7 @@
 <body>
 <main>
   <h1>Tekort Privacy Policy</h1>
-  <p class="sub">Last updated 19 September 2026</p>
+  <p class="sub">Last updated 25 September 2026</p>
 
   <p>Tekort works out how many calories you can eat in a day and helps you decide
   what to eat. To do that it has to hold some information about you. This page
@@ -42,29 +42,34 @@
   <h2>What Tekort holds about you</h2>
   <ul>
     <li><strong>Your email address and an account number</strong>, handed over by
-      Apple or Google when you sign in. Tekort never sees or stores a password.</li>
-    <li><strong>Your body</strong>: sex, age, height, weight, and body fat
-      percentage if you give it. Without these the app cannot work out a single
-      number.</li>
+      Apple or Google when you sign in, with Sign in with Apple or with Google
+      Sign-In. Tekort never sees or stores a password.</li>
+    <li><strong>A sign-in token from Apple</strong>, if you sign in with Apple.
+      It is kept for one reason only: so that when you delete your account,
+      Tekort can tell Apple to remove it too. It is thrown away at that
+      moment.</li>
+    <li><strong>Your body</strong>: sex, age, height and weight. Without these
+      the app cannot work out a single number.</li>
     <li><strong>What you are aiming at</strong>: whether you want to lose, hold
       or gain, and how fast.</li>
-    <li><strong>Everything you log</strong>: each food entry, each plan, each
-      workout you type in, and your weight over time.</li>
+    <li><strong>Everything you log</strong>: each food entry, each plan, and
+      your weight over time.</li>
     <li><strong>Movement from Apple Health</strong>, if you allow it. See below.</li>
     <li><strong>Photographs of packets</strong> you take to add a product.</li>
   </ul>
 
   <h2>Apple Health</h2>
-  <p>If you allow it, Tekort reads the calories you burn moving and your
-  workouts. It never reads your resting burn, which it works out from your own
-  body instead.</p>
+  <p>If you allow it, Tekort reads one thing: the calories you burn moving,
+  which Apple Health calls active energy. It does not read your workouts, and it
+  never reads your resting burn, which it works out from your own body
+  instead.</p>
   <p>Only <strong>the day's total</strong> is saved to your Tekort account, so a
-  past day still adds up once Health has moved on. The individual workouts stay
-  on your phone. Tekort never writes anything back into Apple Health.</p>
+  past day still adds up once Health has moved on. Tekort never writes anything
+  back into Apple Health.</p>
 
   <h2>What other people can see</h2>
   <p>Tekort's food database is built by the people using it. When you add a
-  product — its name, its nutrition figures and the photograph of its packet —
+  product (its name, its nutrition figures and the photograph of its packet),
   <strong>that product becomes visible to everyone else using Tekort</strong>.
   That is the point of it: the next person who scans that barcode gets your work
   instead of typing it out again.</p>
@@ -72,21 +77,23 @@
   address, your body, what you ate, or what you weigh. Those are yours alone.</p>
 
   <h2>Reading a label</h2>
-  <p>When you photograph a packet, the three photographs — front, back and
-  label — are sent to <strong>Google</strong>, who read the nutrition label from
-  them and send the figures back. Google receives the pictures of the packet and
-  nothing else — not your name, not your email address, not your account number,
-  and nothing about your body or what you have eaten.</p>
+  <p>When you photograph a packet, the three photographs, of the front, the back
+  and the label, are sent to <strong>Google</strong>, who read the nutrition label
+  from them and send the figures back. Google receives the pictures of the packet
+  and nothing else: not your name, not your email address, not your account
+  number, and nothing about your body or what you have eaten.</p>
   <p>Tekort uses Google's Gemini API on its <strong>free tier</strong>. On that
   tier Google may keep those photographs, have its own people read them, and use
   them to improve Google's artificial intelligence. That is Google's arrangement
   and not Tekort's, and it is why the app asks you, before the first photograph,
   to keep people and anything private out of the frame. Photograph the packet and
   nothing else.</p>
-  <p>Supabase and Google are the only two companies that handle anything from
-  Tekort. Supabase is required to protect what it holds at least as well as this
-  page promises. Google is the exception described just above, and it is handed
-  nothing but pictures of a packet.</p>
+  <p>Supabase, Apple and Google are the only companies that handle anything
+  from Tekort. Supabase holds what Tekort keeps, and is required to protect it at
+  least as well as this page promises. Apple or Google signs you in, whichever
+  you choose, and Apple also handles paying, below. Reading a label is the
+  exception described just above: for that, Google is handed nothing but
+  pictures of a packet.</p>
 
   <h2>Where it is kept</h2>
   <p>Everything is stored with <strong>Supabase</strong>, on servers in
@@ -101,11 +108,12 @@
   your iPhone's Settings, under your name, then Subscriptions.</p>
 
   <h2>Getting rid of it</h2>
-  <p>Open Tekort, go to the <strong>You</strong> tab, and choose
+  <p>Open Tekort, go to the <strong>Settings</strong> tab, and choose
   <strong>Delete account</strong>. Everything goes: your body, your days, your
   entries, your plans, your weight history, and your account number wherever it
-  appears — including inside the record of edits to products, and on any block
-  you made.</p>
+  appears, including inside the record of edits to products, and on any block
+  you made. If you signed in with Apple, Tekort also tells Apple to remove its
+  sign-in, and throws away the token it kept for that.</p>
   <p>Products you added to the shared food database stay, with nothing left
   connecting them to you. Other people are relying on them.</p>
   <p>One thing does remain, and it is worth saying plainly: the photographs you
@@ -113,9 +121,6 @@
   names stay as they are. Once your account is deleted that number belongs to
   nobody and cannot be looked up, but the photographs of those packets do stay
   grouped together. Nothing in them is about you.</p>
-  <p>You can also take a copy of everything first: <strong>Export
-  everything</strong>, on the same screen.</p>
-
   <h2>Children</h2>
   <p>Tekort is not built for children and is not aimed at anyone under 13. If you
   believe a child has made an account, write to the address below and it will be
